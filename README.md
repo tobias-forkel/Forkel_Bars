@@ -1,7 +1,7 @@
 # Forkel Bars
 Add a customizable notification bar on the top of your Magento Admin Panel. It allows you to make announcements or just leave a message for all Admin Panel users on multiple environments.
 
-![Forkel Bars - Preview](https://raw.githubusercontent.com/tobias-forkel/Forkel_Bars/master/preview.gif)
+![Forkel Bars - Preview](https://raw.githubusercontent.com/tobias-forkel/Forkel_Bars/master/preview.jpg)
 
 ## Installation
 1. Pull the code.
@@ -34,9 +34,6 @@ If you are busy you can purchase a support package on http://www.tobiasforkel.de
 ## History
 ===== 1.0.0 =====
 * Initial version of this module
-* Added a basic grid
-* Added a basic grid with a simple renderer
-* Added help block to renderer grid
 
 ## License
 [OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)
