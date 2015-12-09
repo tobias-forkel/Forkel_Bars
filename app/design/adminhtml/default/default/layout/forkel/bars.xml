@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>community/forkel_bars/main.js"></script></action>
+        </reference>
+        <reference name="notifications">
+            <block type="forkel_bars/adminhtml_notification" before="notification_window" name="forkel_bars_adminhtml_notification" template="forkel/bars/adminhtml/notification.phtml" />
+        </reference>
+    </default>
+    <adminhtml_forkel_bars_index_index>
+        <reference name="content">
+            <block type="forkel_bars/adminhtml_index" name="forkel_bars_index"/>
+        </reference>
+    </adminhtml_forkel_bars_index_index>
+    <adminhtml_forkel_bars_server_index>
+        <reference name="content">
+            <block type="forkel_bars/adminhtml_server" name="forkel_bars_server"/>
+        </reference>
+    </adminhtml_forkel_bars_server_index>
+</layout>

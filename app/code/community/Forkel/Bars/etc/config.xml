@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Forkel Bars
+ *
+ * @category    Forkel
+ * @package     Forkel_Bars
+ * @copyright   Copyright (c) 2015 Tobias Forkel (http://www.tobiasforkel.de)
+ * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ */
+ -->
+
+<config>
+    <modules>
+        <Forkel_Bars>
+            <version>1.0.0</version>
+        </Forkel_Bars>
+    </modules>
+    <global>
+        <blocks>
+            <forkel_bars>
+                <class>Forkel_Bars_Block</class>
+            </forkel_bars>
+        </blocks>
+        <helpers>
+            <forkel_bars>
+                <class>Forkel_Bars_Helper</class>
+            </forkel_bars>
+        </helpers>
+        <models>
+            <forkel_bars>
+                <class>Forkel_Bars_Model</class>
+                <resourceModel>forkel_bars_resource</resourceModel>
+            </forkel_bars>
+            <forkel_bars_resource>
+                <class>Forkel_Bars_Model_Resource</class>
+                <entities>
+                    <index>
+                        <table>forkel_bars_index</table>
+                    </index>
+                    <server>
+                        <table>forkel_bars_server</table>
+                    </server>
+                </entities>
+            </forkel_bars_resource>
+        </models>
+        <resources>
+            <forkel_bars_setup>
+                <setup>
+                    <module>Forkel_Bars</module>
+                </setup>
+            </forkel_bars_setup>
+        </resources>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Forkel_Bars after="Mage_Adminhtml">Forkel_Bars_Adminhtml</Forkel_Bars>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <forkel_bars>
+                    <file>forkel/bars.xml</file>
+                </forkel_bars>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

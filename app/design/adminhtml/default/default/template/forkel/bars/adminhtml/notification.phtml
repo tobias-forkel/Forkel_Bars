@@ -1,0 +1,28 @@
+<?php $message = $this->getMessage(); ?>
+
+<?php if ($message->getId()): ?>
+
+    <style>
+        #forkel_bar_adminhtml_message {
+            color: <?php echo $message->getColor() ?>;
+            overflow: hidden;
+            font-size: 1.2em;
+            text-align: left;
+            padding: 1em 1.5em;
+            background: repeating-linear-gradient(
+            45deg,
+                <?php echo $this->getBackgroundLighter($message->getColorBackground(), '20') ?>,
+                <?php echo $this->getBackgroundLighter($message->getColorBackground(), '20') ?> 10px,
+                <?php echo $message->getColorBackground() ?> 10px,
+                <?php echo $message->getColorBackground() ?> 20px
+            );
+        }
+    </style>
+
+    <div id="forkel_bar_adminhtml_message">
+        <?php echo $message->getServerName(); ?>:
+        <?php echo $message->getName(); ?>
+        <?php echo $message->getDescription(); ?>
+    </div>
+
+<?php endif; ?>
