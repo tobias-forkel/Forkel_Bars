@@ -12,8 +12,10 @@ class Forkel_Bars_Block_Adminhtml_Notification extends Mage_Core_Block_Template
 {
     public function getNotification()
     {
+        $helper = Mage::helper(Forkel_Bars_Helper_Data::MODULE_KEY);
+
         return Mage::getSingleton(Forkel_Bars_Helper_Data::MODEL_INDEX)->loadByHostname(
-            Forkel_Bars_Helper_Data::getHostname()
+            $helper->getHostname()
         );
     }
 
