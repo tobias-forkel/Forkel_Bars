@@ -23,16 +23,16 @@ if ($model->getCollection()->count() == 0)
             'status' => 1
         ),
         array(
-            'name' => 'Please no!',
+            'name' => 'Please!',
             'description' => 'This environment is tested and ready for deployment.',
-            'color' => '#a94442',
-            'color_background' => '#f2dede',
+            'color' => '#715630',
+            'color_background' => '#f5ce96',
             'server_id' => 3,
             'status' => 1
         ),
         array(
             'name' => 'Well ...',
-            'description' => 'Ask your team and project manager before doing any changes.',
+            'description' => 'Ask your team and project manager before do any changes.',
             'color' => '#31708f',
             'color_background' => '#d9edf7',
             'server_id' => 2,

@@ -1,3 +1,3 @@
 document.observe('dom:loaded', function() {
-  $$('.header').first().insert({ before: $$('#forkel_bar_adminhtml_message').first() });
+  $$('.header').first().insert({ before: $$('#forkel_bars_adminhtml_notification').first() });
 });

@@ -10,7 +10,7 @@
 
 class Forkel_Bars_Block_Adminhtml_Notification extends Mage_Core_Block_Template
 {
-    public function getMessage()
+    public function getNotification()
     {
         return Mage::getSingleton(Forkel_Bars_Helper_Data::MODEL_INDEX)->loadByHostname(
             Forkel_Bars_Helper_Data::getHostname()
