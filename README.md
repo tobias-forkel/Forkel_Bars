@@ -11,8 +11,7 @@ Add a customizable notification bar on the top of your Magento Admin Panel. It a
 6. You should also find a record `forkel_bars_setup` in table `core_resource`. Use `select * from core_resource where code = 'forkel_bars_setup';`
 
 ## Features
-* `Add`, `edit` or `delete` multiple server.
-* `Add`, `edit` or `delete` multiple notification bars for each server.
+* `Add`, `edit` or `delete` notification bar for multiple server.
 * `Disable` / `Enable` notification bars.
 
 ## Usage
