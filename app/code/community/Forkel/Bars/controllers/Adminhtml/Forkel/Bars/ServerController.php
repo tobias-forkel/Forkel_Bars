@@ -50,14 +50,14 @@ class Forkel_Bars_Adminhtml_Forkel_Bars_ServerController extends Mage_Adminhtml_
 
             if (!$model->getId())
             {
-                Mage::getSingleton('adminhtml/session')->addError($this->__('The requested entry no longer exists.'));
+                Mage::getSingleton('adminhtml/session')->addError($this->__('The requested record was not found.'));
                 $this->_redirect('*/*/');
 
                 return;
             }
         }
 
-        $this->_title($model->getId() ? $model->getName() : $this->__('New Entry'));
+        $this->_title($model->getId() ? $model->getName() : $this->__('New Record'));
 
         Mage::register(Forkel_Bars_Helper_Data::MODULE_KEY, $model);
 
@@ -84,7 +84,7 @@ class Forkel_Bars_Adminhtml_Forkel_Bars_ServerController extends Mage_Adminhtml_
                 $model->setData($postData);
                 $model->save();
 
-                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('%s has been saved.', $model->getName()));
+                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('The record ( %s ) has been saved.', $model->getName()));
                 $this->_redirect('*/*/');
 
                 return;
@@ -95,7 +95,7 @@ class Forkel_Bars_Adminhtml_Forkel_Bars_ServerController extends Mage_Adminhtml_
             }
 
             catch (Exception $e) {
-                Mage::getSingleton('adminhtml/session')->addError($this->__('An error occurred while saving this entry.'));
+                Mage::getSingleton('adminhtml/session')->addError($this->__('An error occurred while saving this record.'));
             }
         }
     }
@@ -113,7 +113,7 @@ class Forkel_Bars_Adminhtml_Forkel_Bars_ServerController extends Mage_Adminhtml_
 
         if (!filter_var($id, FILTER_VALIDATE_INT))
         {
-            Mage::getSingleton('adminhtml/session')->addError($this->__('Please select one entry.'));
+            Mage::getSingleton('adminhtml/session')->addError($this->__('Please select one record.'));
         }
         else
         {
@@ -122,7 +122,7 @@ class Forkel_Bars_Adminhtml_Forkel_Bars_ServerController extends Mage_Adminhtml_
                 $model = Mage::getSingleton(Forkel_Bars_Helper_Data::MODEL_SERVER);
                 $model->load($id)->delete();
 
-                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('The selected entry was successfully deleted.'));
+                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('The selected record was successfully deleted.'));
             }
 
             catch (Mage_Core_Exception $e)

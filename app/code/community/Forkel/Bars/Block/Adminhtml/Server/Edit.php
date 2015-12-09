@@ -17,7 +17,7 @@ class Forkel_Bars_Block_Adminhtml_Server_Edit extends Mage_Adminhtml_Block_Widge
 
         parent::__construct();
 
-        $this->_updateButton('save', 'label', $this->__('Save Data'));
+        $this->_updateButton('save', 'label', $this->__('Save Record'));
     }
 
     /**
@@ -31,9 +31,9 @@ class Forkel_Bars_Block_Adminhtml_Server_Edit extends Mage_Adminhtml_Block_Widge
     {
         if (Mage::registry(Forkel_Bars_Helper_Data::MODULE_KEY)->getId())
         {
-            return $this->__('Forkel Bars > Server > Edit');
+            return $this->__('Forkel Bars > Server > %s', $this->__('Edit'));
         }
 
-        return $this->__('Forkel Bars > Server > New');
+        return $this->__('Forkel Bars > Server > %s', $this->__('New'));
     }
 }

@@ -17,7 +17,7 @@ class Forkel_Bars_Block_Adminhtml_Index_Edit extends Mage_Adminhtml_Block_Widget
 
         parent::__construct();
 
-        $this->_updateButton('save', 'label', $this->__('Save Data'));
+        $this->_updateButton('save', 'label', $this->__('Save Record'));
     }
 
     /**
@@ -31,9 +31,9 @@ class Forkel_Bars_Block_Adminhtml_Index_Edit extends Mage_Adminhtml_Block_Widget
     {
         if (Mage::registry(Forkel_Bars_Helper_Data::MODULE_KEY)->getId())
         {
-            return $this->__('Forkel Bars > Edit');
+            return $this->__('Forkel Bars > %s', $this->__('Edit'));
         }
 
-        return $this->__('Forkel Bars > New');
+        return $this->__('Forkel Bars > %s', $this->__('New'));
     }
 }

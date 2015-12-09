@@ -59,7 +59,7 @@ class Forkel_Bars_Block_Adminhtml_Server_Edit_Form extends Mage_Adminhtml_Block_
             'name'      => 'name',
             'label'     => $this->__('Name'),
             'title'     => $this->__('Name'),
-            'note'     => $this->__('The name of your environment.'),
+            'note'     => $this->__('The name of the environment.'),
             'required'  => true
         ));
 
@@ -67,7 +67,7 @@ class Forkel_Bars_Block_Adminhtml_Server_Edit_Form extends Mage_Adminhtml_Block_
             'name'      => 'hostname',
             'label'     => $this->__('Hostname'),
             'title'     => $this->__('Hostname'),
-            'note'     => $this->__('The hostname without "http" and slashes "/".'),
+            'note'     => $this->__('The hostname without http and slashes /.'),
         ));
 
         $form->setValues($model->getData());
