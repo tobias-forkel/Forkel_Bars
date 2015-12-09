@@ -19,7 +19,7 @@ Add a customizable notification bar on the top of your Magento Admin Panel. It a
 The functionality can be used in the backend section `System > Bars`.
 
 ## Support
-If you have any issues with this extension, open an issue on [Github](https://github.com/tobias-forkel/Forkel_Grids/issues)
+If you have any issues with this extension, open an issue on [Github](https://github.com/tobias-forkel/Forkel_Bars/issues)
 
 ## Contributing
 1. Fork it!
