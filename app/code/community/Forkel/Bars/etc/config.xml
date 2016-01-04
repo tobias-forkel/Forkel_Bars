@@ -13,7 +13,7 @@
 <config>
     <modules>
         <Forkel_Bars>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Forkel_Bars>
     </modules>
     <global>
