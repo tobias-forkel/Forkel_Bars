@@ -20,7 +20,8 @@ if ($model->getCollection()->count() == 0)
             'color' => '#a94442',
             'color_background' => '#f2dede',
             'server_id' => 4,
-            'status' => 1
+            'status' => 1,
+            'admin_role_id' => 1
         ),
         array(
             'name' => 'Please!',
@@ -28,7 +29,8 @@ if ($model->getCollection()->count() == 0)
             'color' => '#715630',
             'color_background' => '#f5ce96',
             'server_id' => 3,
-            'status' => 1
+            'status' => 1,
+            'admin_role_id' => 1,
         ),
         array(
             'name' => 'Well ...',
@@ -36,7 +38,8 @@ if ($model->getCollection()->count() == 0)
             'color' => '#31708f',
             'color_background' => '#d9edf7',
             'server_id' => 2,
-            'status' => 1
+            'status' => 1,
+            'admin_role_id' => 1
         ),
         array(
             'name' => 'Good!',
@@ -44,7 +47,8 @@ if ($model->getCollection()->count() == 0)
             'color' => '#3c763d',
             'color_background' => '#dff0d8',
             'server_id' => 1,
-            'status' => 1
+            'status' => 1,
+            'admin_role_id' => 1
         )
     );
 

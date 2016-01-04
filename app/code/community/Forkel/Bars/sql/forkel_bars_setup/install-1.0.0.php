@@ -34,6 +34,9 @@ if ($installer->getConnection()->isTableExists($table) != true)
             'nullable'  => false,
             'default'  => 0,
         ), 'Status')
+        ->addColumn('admin_role_id', Varien_Db_Ddl_Table::TYPE_TEXT, 255, array(
+            'nullable'  => false,
+        ), 'Admin Role')
         ->addColumn('server_id', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, array(
             'unsigned'  => true,
             'nullable'  => false,

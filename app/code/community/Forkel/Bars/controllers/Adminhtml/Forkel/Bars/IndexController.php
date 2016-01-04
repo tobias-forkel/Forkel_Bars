@@ -81,6 +81,16 @@ class Forkel_Bars_Adminhtml_Forkel_Bars_IndexController extends Mage_Adminhtml_C
             {
                 $model = Mage::getSingleton(Forkel_Bars_Helper_Data::MODEL_INDEX);
 
+                foreach ($postData as $key => $value)
+                {
+                    if (is_array($value))
+                    {
+                        $postData[$key] = implode(',', $this->getRequest()->getParam($key));
+                    }
+                }
+
+                Mage::log($postData);
+
                 $model->setData($postData);
                 $model->save();
 

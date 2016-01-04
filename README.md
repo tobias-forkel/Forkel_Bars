@@ -14,6 +14,7 @@ Add a customizable notification bar on the top of your Magento Admin Panel. It a
 
 ## Features
 * `Add`, `edit` or `delete` notification bar for multiple server.
+* Display each notification bar for a specific admin user role.
 * `Disable` / `Enable` notification bars.
 
 ## Usage
@@ -33,6 +34,9 @@ If you have any issues with this extension, open an issue on [Github](https://gi
 If you are busy you can purchase a support package on http://www.tobiasforkel.de.
 
 ## History
+===== 1.0.1 =====
+* Display each notification bar for a specific admin user role.
+
 ===== 1.0.0 =====
 * Initial version of this module
 

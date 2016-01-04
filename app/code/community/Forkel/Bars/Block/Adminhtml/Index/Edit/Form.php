@@ -59,8 +59,6 @@ class Forkel_Bars_Block_Adminhtml_Index_Edit_Form extends Mage_Adminhtml_Block_W
             'name'      => 'server_id',
             'label'     => $this->__('Server'),
             'title'     => $this->__('Server'),
-            'required'  => false,
-            'value'     => $model->getId(),
             'values'    => Mage::getSingleton('forkel_bars/server')->getOptionArray()
         ));
 
@@ -103,6 +101,15 @@ class Forkel_Bars_Block_Adminhtml_Index_Edit_Form extends Mage_Adminhtml_Block_W
                 '0'     => $this->__('Disabled'),
                 '1'     => $this->__('Enabled')
             )
+        ));
+
+        $fieldset->addField('admin_role_id', 'multiselect', array(
+            'name'      => 'admin_role_id',
+            'label'     => $this->__('Admin Role'),
+            'title'     => $this->__('Admin Role'),
+            'values'    => Mage::getSingleton('forkel_bars/roles')->getOptionArray(),
+            'note'      => $this->__('Restrict for a specific admin role.'),
+            'style'     => 'height: 120px;'
         ));
 
         $form->setValues($model->getData());

@@ -22,7 +22,13 @@ class Forkel_Bars_Model_Index extends Mage_Core_Model_Abstract
      */
     public function loadByHostname($hostname = '', $status = 1)
     {
+        $session = Mage::getSingleton('admin/session');
+        $role_id = implode('', $session->getUser()->getRoles());
+
         $collection = $this->getCollection();
+        $collection->addFieldToFilter('admin_role_id', array('finset' => $role_id));
+        $collection->addFieldToFilter('status', $status);
+
         $collection->getSelect()->join(array(
             'server'=> 'forkel_bars_server'),
             'main_table.server_id = server.id', array(
@@ -30,7 +36,6 @@ class Forkel_Bars_Model_Index extends Mage_Core_Model_Abstract
             )
         );
 
-        $collection->addFieldToFilter('status', $status);
         $collection->addFieldToFilter('hostname', $hostname);
 
         return $collection->getFirstItem();

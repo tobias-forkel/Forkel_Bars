@@ -12,10 +12,8 @@ class Forkel_Bars_Block_Adminhtml_Notification extends Mage_Core_Block_Template
 {
     public function getNotification()
     {
-        $helper = Mage::helper(Forkel_Bars_Helper_Data::MODULE_KEY);
-
         return Mage::getSingleton(Forkel_Bars_Helper_Data::MODEL_INDEX)->loadByHostname(
-            $helper->getHostname()
+            Mage::helper(Forkel_Bars_Helper_Data::MODULE_KEY)->getHostname()
         );
     }
 
@@ -28,7 +26,6 @@ class Forkel_Bars_Block_Adminhtml_Notification extends Mage_Core_Block_Template
      */
     public function getBackgroundLighter($hex = '', $diff = '50')
     {
-        return Forkel_Bars_Helper_Data::hexColorLighter($hex, $diff);
+        return Mage::helper(Forkel_Bars_Helper_Data::MODULE_KEY)->hexColorLighter($hex, $diff);
     }
-
 }
