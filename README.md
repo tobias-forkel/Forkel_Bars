@@ -1,9 +1,9 @@
 # Forkel Bars
 Add a customizable notification bar on the top of your Magento Admin Panel. It allows you to make announcements or just leave a message for all Admin Panel users on multiple environments.
 
-![Forkel Bars - Preview](https://raw.githubusercontent.com/tobias-forkel/Forkel_Bars/master/preview.jpg)
+![Forkel Bars - Preview](http://www.tobiasforkel.de/public/magento/forkel_bars/version/1.0/screenshots/github/backend/dashboard.jpg)
 
-![Forkel Bars - Grid Preview](https://raw.githubusercontent.com/tobias-forkel/Forkel_Bars/master/preview_grid.jpg)
+![Forkel Bars - Grid Preview](http://www.tobiasforkel.de/public/magento/forkel_bars/version/1.0/screenshots/github/backend/settings.jpg)
 
 ## Installation
 1. Pull the code.
@@ -21,7 +21,7 @@ Add a customizable notification bar on the top of your Magento Admin Panel. It a
 The functionality can be used in the backend section `System > Bars`.
 
 ## Support
-If you have any issues with this extension, open an issue on [Github](https://github.com/tobias-forkel/Forkel_Bars/issues).
+If you have any issues with this extension, open an issue on [Github](https://github.com/tobias-forkel/Forkel_Bars/issues). For a custom build, please contact me on http://www.tobiasforkel.de.
 
 ## Contributing
 1. Fork it!
@@ -29,9 +29,8 @@ If you have any issues with this extension, open an issue on [Github](https://gi
 3. Commit your changes: `git commit -am 'Add some feature'`.
 4. Push to the branch: `git push origin my-new-feature`.
 5. Submit a pull request.
-6. Get a free Twitter post with a link to your portfolio or project.
 
-If you are busy you can purchase a support package on http://www.tobiasforkel.de.
+Follow me on [GitHub](https://github.com/tobias-forkel) and [Twitter](https://twitter.com/tobiasforkel).
 
 ## History
 ===== 1.0.1 =====
