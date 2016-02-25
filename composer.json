@@ -1,0 +1,13 @@
+{
+    "name": "tobias-forkel/forkel_bars",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "https://github.com/tobias-forkel/Forkel_Bars",
+    "description": "No excuse for excitedly changed settings in the Magento admin panel. This module will let all participants know on what environment they are working.",
+    "authors": [
+        {
+            "name": "Tobias Forkel",
+            "email": "tobias.forkel@gmx.com"
+        }
+    ]
+}

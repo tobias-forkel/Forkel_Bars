@@ -1,0 +1,8 @@
+src/app/code/community/Forkel/Bars app/code/community/Forkel/Bars
+src/app/design/adminhtml/default/default/layout/forkel/bars.xml app/design/adminhtml/default/default/layout/forkel/bars.xml
+src/app/design/adminhtml/default/default/template/forkel/bars app/design/adminhtml/default/default/template/forkel/bars
+src/app/locale/de_DE/Forkel_Bars.csv app/locale/de_DE/Forkel_Bars.csv
+src/app/locale/en_US/Forkel_Bars.csv app/locale/en_US/Forkel_Bars.csv
+src/js/community/forkel_bars js/community/forkel_bars/main.js
+src/app/etc/modules/Forkel_Bars.xml app/etc/modules/Forkel_Bars.xml
+
