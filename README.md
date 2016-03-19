@@ -33,6 +33,12 @@ If you have any issues with this extension, open an issue on [Github](https://gi
 Follow me on [GitHub](https://github.com/tobias-forkel) and [Twitter](https://twitter.com/tobiasforkel).
 
 ## History
+===== 1.0.2 =====
+* Wrong XML syntax in bars.xml.
+* Simplified main.js with pure JavaScript. No Prototype anymore.
+* Minimized main.js
+* Hide bar until DOM is loaded.
+
 ===== 1.0.1 =====
 * Display each notification bar for a specific admin user role.
 

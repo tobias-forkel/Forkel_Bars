@@ -2,7 +2,7 @@
 <layout>
     <default>
         <reference name="head">
-            <action method="addJs"><script>community/forkel_bars/main.js"></script></action>
+            <action method="addJs"><script>community/forkel_bars/main.min.js</script></action>
         </reference>
         <reference name="notifications">
             <block type="forkel_bars/adminhtml_notification" before="notification_window" name="forkel_bars_adminhtml_notification" template="forkel/bars/adminhtml/notification.phtml" />
