@@ -11,7 +11,7 @@
 * Wrong XML syntax in bars.xml.
 * Simplified main.js with pure JavaScript. No Prototype anymore.
 * Minimized main.js
-* Hide bar until DOM is not loaded.
+* Hide bar until DOM is loaded.
 
 ===== 1.0.1 =====
 * Display each notification bar for a specific admin user role.
