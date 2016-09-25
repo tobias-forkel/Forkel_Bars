@@ -9,7 +9,7 @@ $installer->startSetup();
  */
 $table = $installer->getTable('forkel_bars/index');
 
-if ($installer->getConnection()->tableColumnExists($table, 'admin_role_id') != true)
+if (!$installer->getConnection()->tableColumnExists($table, 'admin_role_id'))
 {
     $installer->getConnection()
         ->addColumn($table,

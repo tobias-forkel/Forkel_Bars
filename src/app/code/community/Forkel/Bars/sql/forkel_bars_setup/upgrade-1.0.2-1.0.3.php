@@ -9,7 +9,7 @@ $installer->startSetup();
  */
 $table = $installer->getTable('forkel_bars/server');
 
-if ($installer->getConnection()->tableColumnExists($table, 'hostname') == true)
+if ($installer->getConnection()->tableColumnExists($table, 'hostname'))
 {
     $installer->getConnection()
         ->changeColumn($table,
