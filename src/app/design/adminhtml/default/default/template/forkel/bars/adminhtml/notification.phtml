@@ -4,12 +4,7 @@
 
     <style>
         #forkel_bars_adminhtml_notification {
-            display: none;
             color: <?php echo $notification->getColor() ?>;
-            overflow: hidden;
-            font-size: 1.2em;
-            text-align: left;
-            padding: 1em 1.5em;
             background: repeating-linear-gradient(
             45deg,
                 <?php echo $this->getBackgroundLighter($notification->getColorBackground(), '20') ?>,
@@ -27,4 +22,3 @@
     </div>
 
 <?php endif; ?>
-

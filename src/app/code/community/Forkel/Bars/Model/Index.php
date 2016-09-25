@@ -16,11 +16,11 @@ class Forkel_Bars_Model_Index extends Mage_Core_Model_Abstract
     }
 
     /**
-     * Load collection filtered by hostname and status
+     * Load collection filtered by environment variable and status
      *
      * @return Forkel_Bars_Model_Index
      */
-    public function loadByHostname($hostname = '', $status = 1)
+    public function loadByEnvironmentVariable($status = 1)
     {
         $session = Mage::getSingleton('admin/session');
         $role_id = implode('', $session->getUser()->getRoles());
@@ -36,8 +36,13 @@ class Forkel_Bars_Model_Index extends Mage_Core_Model_Abstract
             )
         );
 
-        $collection->addFieldToFilter('hostname', $hostname);
+        $keys = array_keys($_SERVER);
+        $values = array_values($_SERVER);
+
+        $collection->addFieldToFilter('environment_variable', array('finset', $keys));
+        $collection->addFieldToFilter('environment_value', array('finset', $values));
 
         return $collection->getFirstItem();
     }
 }
+

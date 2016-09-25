@@ -15,18 +15,35 @@ class Forkel_Bars_Helper_Data extends Mage_Core_Helper_Abstract
 
     const MODEL_INDEX       = 'forkel_bars/index';
     const MODEL_SERVER      = 'forkel_bars/server';
+    const MODEL_SERVER_ENVIRONMENT  = 'forkel_bars/server_environment';
 
     /**
-     * Return hostname by current url
+     * Return environment variables
      *
      * @return array
      */
-    public function getHostname()
+    public function getEnvironment()
     {
-        $url = Mage::helper('core/url')->getCurrentUrl();
-        $url = Mage::getSingleton('core/url')->parseUrl($url);
+        $options = array();
 
-        return $url->getHost();
+        $options[] = array(
+            'value' => '',
+            'label' => $this->__('Select a server variable')
+        );
+
+        if (is_array($_SERVER)) {
+
+            foreach ($_SERVER as $index => $value) {
+
+                $options[] = array(
+                    'value' => $index,
+                    'label' => sprintf('%s ( %s )', $index, $value)
+                );
+            }
+
+        }
+
+        return $options;
     }
 
     /**
