@@ -17,8 +17,8 @@ if ($model->getCollection()->count() == 0)
         array(
             'name' => 'Noooope!',
             'description' => 'Your boss will fire you right away.',
-            'color' => '#a94442',
-            'color_background' => '#f2dede',
+            'color' => '#fff',
+            'color_background' => '#d2552e',
             'server_id' => 4,
             'status' => 1,
             'admin_role_id' => 1
@@ -26,8 +26,8 @@ if ($model->getCollection()->count() == 0)
         array(
             'name' => 'Please!',
             'description' => 'This environment is tested and ready for deployment.',
-            'color' => '#715630',
-            'color_background' => '#f5ce96',
+            'color' => '#fff',
+            'color_background' => '#8a6d3b',
             'server_id' => 3,
             'status' => 1,
             'admin_role_id' => 1,
@@ -35,8 +35,8 @@ if ($model->getCollection()->count() == 0)
         array(
             'name' => 'Well ...',
             'description' => 'Ask your team and project manager before do any changes.',
-            'color' => '#31708f',
-            'color_background' => '#d9edf7',
+            'color' => '#fff',
+            'color_background' => '#31708f',
             'server_id' => 2,
             'status' => 1,
             'admin_role_id' => 1
@@ -44,8 +44,8 @@ if ($model->getCollection()->count() == 0)
         array(
             'name' => 'Good!',
             'description' => ' You can do whatever you want.',
-            'color' => '#3c763d',
-            'color_background' => '#dff0d8',
+            'color' => '#fff',
+            'color_background' => '#3c763d',
             'server_id' => 1,
             'status' => 1,
             'admin_role_id' => 1
@@ -67,22 +67,22 @@ if ($model->getCollection()->count() == 0)
         array(
             'name'          => 'Local Environment',
             'description'   => 'Dictum viverra suspendisse hendrerit quam pellentesque pharetra, elementum sit urna, morbi scelerisque.',
-            'hostname'      => 'local.server.com'
+            'environment_value'      => 'local.server.com'
         ),
         array(
             'name'          => 'Staging Environment',
             'description'   => 'Diharetra, elementum sit urna, morbi scelerisque.',
-            'hostname'      => 'staging.server.com'
+            'environment_value'      => 'staging.server.com'
         ),
         array(
             'name'          => 'Preview Environment',
             'description'   => 'Sed ut, amet nam, cras in arcu. Mollis aenean pede tortor fusce mattis rutrum, non sollicitudin.',
-            'hostname'      => 'preview.server.com'
+            'environment_value'      => 'preview.server.com'
         ),
         array(
             'name'          => 'Production Environment',
             'description'   => 'Mollis aenean pede tortor fusce mattis rutrum, non sollicitudin.',
-            'hostname'      => 'www.server.com'
+            'environment_value'      => 'www.server.com'
         ),
     );
 
