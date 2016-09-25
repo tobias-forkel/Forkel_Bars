@@ -39,6 +39,8 @@ Follow me on [GitHub](https://github.com/tobias-forkel) and [Twitter](https://tw
 * Replaced "hostname" with a execution environment variable dropdown
 * Added SERVER_NAME as a default
 * Added style.css for notification bar
+* Added configuration tab in System > Configuration
+* Fixed wrong translation xml path
 
 ===== 1.0.2 =====
 * Wrong XML syntax in bars.xml.

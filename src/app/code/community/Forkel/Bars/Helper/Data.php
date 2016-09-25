@@ -18,6 +18,23 @@ class Forkel_Bars_Helper_Data extends Mage_Core_Helper_Abstract
     const MODEL_SERVER_ENVIRONMENT  = 'forkel_bars/server_environment';
 
     /**
+     * Return filtered $_SERVER array
+     *
+     * @return array
+     */
+    public function getServerEnvFiltered()
+    {
+        $filter = explode(',', Mage::getStoreConfig('forkel_bars/server/variables'));
+
+        if (count($filter) > 0)
+        {
+            return array_intersect_key($_SERVER, array_flip($filter));
+        }
+
+        return $_SERVER;
+    }
+
+    /**
      * Return environment variables
      *
      * @return array
@@ -25,18 +42,19 @@ class Forkel_Bars_Helper_Data extends Mage_Core_Helper_Abstract
     public function getEnvironment()
     {
         $options = array();
+        $env = $this->getServerEnvFiltered();
 
-        $options[] = array(
+        array_push($options, array(
             'value' => '',
             'label' => $this->__('Select a server variable')
-        );
+        ));
 
-        if (is_array($_SERVER)) {
+        if (is_array($env)) {
 
-            foreach ($_SERVER as $index => $value) {
+            foreach ($env as $index => $value) {
 
                 $options[] = array(
-                    'value' => $index,
+                    'value' => trim($index),
                     'label' => sprintf('%s ( %s )', $index, $value)
                 );
             }

@@ -22,6 +22,8 @@ class Forkel_Bars_Model_Index extends Mage_Core_Model_Abstract
      */
     public function loadByEnvironmentVariable($status = 1)
     {
+        $env = Mage::helper(Forkel_Bars_Helper_Data::MODULE_KEY)->getServerEnvFiltered();
+
         $session = Mage::getSingleton('admin/session');
         $role_id = implode('', $session->getUser()->getRoles());
 
@@ -36,8 +38,8 @@ class Forkel_Bars_Model_Index extends Mage_Core_Model_Abstract
             )
         );
 
-        $keys = array_keys($_SERVER);
-        $values = array_values($_SERVER);
+        $keys = array_keys($env);
+        $values = array_values($env);
 
         $collection->addFieldToFilter('environment_variable', array('finset', $keys));
         $collection->addFieldToFilter('environment_value', array('finset', $values));

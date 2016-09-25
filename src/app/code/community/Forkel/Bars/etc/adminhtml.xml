@@ -27,6 +27,13 @@
                                     </server>
                                 </children>
                             </forkel_bars>
+                            <config>
+                                <children>
+                                    <forkel_bars translate="title" module="forkel_bars">
+                                        <title>Forkel Bars</title>
+                                    </forkel_bars>
+                                </children>
+                            </config>
                         </children>
                     </system>
                 </children>
@@ -46,6 +53,11 @@
                             <sort_order>10</sort_order>
                             <action>adminhtml/forkel_bars_server/index</action>
                         </server>
+                        <settings translate="title">
+                            <title>Settings</title>
+                            <sort_order>20</sort_order>
+                            <action>adminhtml/system_config/edit/section/forkel_bars</action>
+                        </settings>
                     </children>
                 </forkel_bars>
             </children>
