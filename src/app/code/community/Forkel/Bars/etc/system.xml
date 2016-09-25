@@ -21,7 +21,6 @@
         <forkel_bars translate="label" module="forkel_bars">
             <label>Forkel Bars</label>
             <tab>general</tab>
-            <frontend_type>text</frontend_type>
             <sort_order>100</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
@@ -29,7 +28,6 @@
             <groups>
                 <server translate="label">
                     <label>Server</label>
-                    <frontend_type>select</frontend_type>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
