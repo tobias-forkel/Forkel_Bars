@@ -3,6 +3,8 @@ Add a customizable notification bar on the top of your Magento Admin Panel. It a
 
 ![Forkel Bars - Preview](http://www.tobiasforkel.de/public/magento/forkel_bars/version/1.0/screenshots/github/backend/dashboard.jpg)
 
+![Forkel Bars - Edit](http://www.tobiasforkel.de/public/magento/forkel_bars/version/1.0/screenshots/github/backend/edit.jpg)
+
 ![Forkel Bars - Grid Preview](http://www.tobiasforkel.de/public/magento/forkel_bars/version/1.0/screenshots/github/backend/settings.jpg)
 
 ## Installation
@@ -33,6 +35,13 @@ If you have any issues with this extension, open an issue on [Github](https://gi
 Follow me on [GitHub](https://github.com/tobias-forkel) and [Twitter](https://twitter.com/tobiasforkel).
 
 ## History
+===== 1.0.3 =====
+* Replaced "hostname" with a execution environment variable dropdown
+* Added SERVER_NAME as a default
+* Added style.css for notification bar
+* Added configuration tab in System > Configuration
+* Fixed wrong translation xml path
+
 ===== 1.0.2 =====
 * Wrong XML syntax in bars.xml.
 * Simplified main.js with pure JavaScript. No Prototype anymore.

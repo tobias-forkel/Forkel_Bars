@@ -72,10 +72,17 @@ class Forkel_Bars_Block_Adminhtml_Server_Grid extends Mage_Adminhtml_Block_Widge
             )
         );
 
-        $this->addColumn('hostname',
+        $this->addColumn('environment_variable',
             array(
-                'header'    => $this->__('Hostname'),
-                'index'     => 'hostname'
+                'header'    => $this->__('Environment Variable'),
+                'index'     => 'environment_variable'
+            )
+        );
+
+        $this->addColumn('environment_value',
+            array(
+                'header'    => $this->__('Environment Value'),
+                'index'     => 'environment_value'
             )
         );
 

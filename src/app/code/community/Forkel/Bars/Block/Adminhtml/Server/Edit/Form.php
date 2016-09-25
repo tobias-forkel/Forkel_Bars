@@ -63,11 +63,19 @@ class Forkel_Bars_Block_Adminhtml_Server_Edit_Form extends Mage_Adminhtml_Block_
             'required'  => true
         ));
 
-        $fieldset->addField('hostname', 'text', array(
-            'name'      => 'hostname',
-            'label'     => $this->__('Hostname'),
-            'title'     => $this->__('Hostname'),
-            'note'     => $this->__('The hostname without http and slashes /.'),
+        $fieldset->addField('environment_variable', 'select', array(
+            'name'      => 'environment_variable',
+            'label'     => $this->__('Environment Variable'),
+            'title'     => $this->__('Environment Variable'),
+            'values'    => Mage::getSingleton('forkel_bars/server_environment')->getOptionArray(),
+            'note'     => $this->__('The execution environment variable for server identification. Add more variables in <a href="%s"> System > Configuration > Forkel Bars > Server</a>.', $this->getUrl('adminhtml/system_config/edit/section/forkel_bars')),
+        ));
+
+        $fieldset->addField('environment_value', 'text', array(
+            'name'      => 'environment_value',
+            'label'     => $this->__('Environment Value'),
+            'title'     => $this->__('Environment Value'),
+            'note'     => $this->__('The value that should match the selected variable.'),
         ));
 
         $form->setValues($model->getData());
@@ -77,3 +85,4 @@ class Forkel_Bars_Block_Adminhtml_Server_Edit_Form extends Mage_Adminhtml_Block_
         return parent::_prepareForm();
     }
 }
+

@@ -13,7 +13,7 @@
 <config>
     <modules>
         <Forkel_Bars>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </Forkel_Bars>
     </modules>
     <global>
@@ -73,12 +73,19 @@
         </layout>
         <translate>
             <modules>
-                <forkel_maintenancealert>
+                <forkel_bars>
                     <files>
                         <default>Forkel_Bars.csv</default>
                     </files>
-                </forkel_maintenancealert>
+                </forkel_bars>
             </modules>
         </translate>
     </adminhtml>
+    <default>
+        <forkel_bars>
+            <server>
+                <variables>SERVER_NAME,HTTP_HOST,SERVER_ADDR,MAGE_IS_DEVELOPER_MODE</variables>
+            </server>
+        </forkel_bars>
+    </default>
 </config>

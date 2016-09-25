@@ -2,6 +2,9 @@
 <layout>
     <default>
         <reference name="head">
+            <action method="addCss">
+                <name>forkel/bars/styles.css</name>
+            </action>
             <action method="addJs"><script>community/forkel_bars/main.min.js</script></action>
         </reference>
         <reference name="notifications">

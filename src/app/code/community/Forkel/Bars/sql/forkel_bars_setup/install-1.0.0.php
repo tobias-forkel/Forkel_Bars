@@ -8,7 +8,7 @@ $installer->startSetup();
  * Create table 'forkel_bars_index'
  */
 $table = $installer->getTable('forkel_bars/index');
-if ($installer->getConnection()->isTableExists($table) != true)
+if (!$installer->getConnection()->isTableExists($table))
 {
     $table = $installer->getConnection()
         ->newTable($table)
@@ -49,7 +49,7 @@ if ($installer->getConnection()->isTableExists($table) != true)
  * Create table 'forkel_bars_server'
  */
 $table = $installer->getTable('forkel_bars/server');
-if ($installer->getConnection()->isTableExists($table) != true)
+if (!$installer->getConnection()->isTableExists($table))
 {
     $table = $installer->getConnection()
         ->newTable($table)
