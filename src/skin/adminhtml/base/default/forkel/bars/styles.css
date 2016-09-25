@@ -1,0 +1,7 @@
+#forkel_bars_adminhtml_notification {
+    display: none;
+    font-size: 1.2em;
+    overflow: hidden;
+    text-align: left;
+    padding: 1em 1.5em;
+}
